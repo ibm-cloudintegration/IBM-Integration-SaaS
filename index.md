@@ -6,10 +6,10 @@ Proof of Technology sessions are complimentary classes to build
 understanding of IBM technology and software with practical
 presentations and hands-on lab exercises. 
 
-**What is IBM IWHI?**
+**What is IBM Integration SaaS?**
 
-IBM webMethods Hybrid Integration (IWHI) is a unified, SaaS-based iPaaS that provides a central control plane for connecting APIs, applications, events, and B2B/EDI data across hybrid, multi-cloud environments. 
-Key features include AI-powered automation, end-to-end monitoring, and secure managed file transfers. 
+IBM Integration SaaS is a fully managed Integration Platform-as-a-Service (iPaaS). Customers don't
+manage infrastructure — IBM does. They connect apps, automate workflows, manage APIs, exchange B2B documents, transfer files, and handle event streams, all from one cloud platform 
 
 **Key Components and Features**
 
@@ -30,9 +30,9 @@ Key features include AI-powered automation, end-to-end monitoring, and secure ma
 
 |  Topic                                | Description                                                                
 |---------------------------------------|-----------------------------------------------------------------------------|
-| [IWHI - API Management](APIC/ReadMe.md)         | This section you will explore an API Management platform for use in your API Economy. IBM API Connect enables users to create, assemble, manage, secure and socialize APIs
+| [IBM Integration SaaS <br> API Management](APIC/ReadMe.md)         | This section you will explore an API Management platform for use in your API Economy. IBM API Connect enables users to create, assemble, manage, secure and socialize APIs
 |---------------------------------------|-----------------------------------------------------------------------------|
-| [IWHI - Integration](Integration/ReadMe.md)         | This section you will explorer key capabilities using both the ACE webmethods to build integrations solutions.
+| [IBM Integration SaaS <br> Integration](Integration/ReadMe.md)         | This section you will explorer key capabilities using both the ACE webmethods to build integrations solutions.
 |---------------------------------------|-----------------------------------------------------------------------------|
-| [IWHI - Managed File Transfer](MFT/ReadMe.md)     | **This section you will explorer key capabilities using both the webmethods MFT and webMethods integrations solutions**  
+| [IBM Integration SaaS <br> Managed File Transfer](MFT/ReadMe.md)     | **This section you will explorer key capabilities using both the webmethods MFT and webMethods integrations solutions**  
 |---------------------------------------|-----------------------------------------------------------------------------|
