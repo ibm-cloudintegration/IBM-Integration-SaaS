@@ -58,6 +58,15 @@ Before beginning this lab, you will want to make sure that you have completed th
 
 ![alt text][pic91]
 -->
+ ![](images/api-saas1.png)
+
+  ![](images/api-saas2.png)
+
+ ![](images/api-saas3.png)
+
+ ![](images/api-saas4.png)
+
+ ![](images/api-saas5.png)
 
 2\. Filter instances by the student(number). You will see your instances.(br)
 
@@ -68,7 +77,7 @@ Before beginning this lab, you will want to make sure that you have completed th
 
 ![alt text][pic93]
 
-5\. For this lab, we already have the REST service built and available as a **bar** file. You can download the **CustomerDatabaseV1.bar** file for the service [<u>**here**</u>](./resources/CustomerDatabaseV1.bar).
+5\. For this lab, we already have the REST service built and available as a **bar** file. You can download the **CustomerDatabaseV3Lab.bar** file for the service [<u>**here**</u>](./resources/CustomerDatabaseV3Lab.bar).
 
 6\. Click on **Deploy integrations**.
 
