@@ -66,7 +66,7 @@ First, you will deploy a Customer Database REST service to App Connect and then 
 1. You will now be on the main page for App Connect.   Click on the **Manage** on the left menu.  Here you may see other Runtimes created by others using this instance.  
     ![](images/api-saas4.png)
 
-1. Now select the **BAR files** on the menu bar.  If you see **CustomerDatabaseV3Lab** you can continues to step xx since someone else has already added it. 
+1. Now select the **BAR files** on the menu bar.  If you see **CustomerDatabaseV3Lab** you can continues to **step 10** since someone else has already added it. 
 
     ![](images/api-saas5a.png)
 
@@ -89,80 +89,59 @@ First, you will deploy a Customer Database REST service to App Connect and then 
 
    ![](images/api-saas6.png)
 
-1. The only thing you need to add is your Name of the runtime.<br> 
-**Note** Make sure you prefix is with your initials. 
-ex: **jrj**-customer-database-v3
-
-    Then click **Create**
+1. Add the name of your runtime.<br> 
+**Note** Make sure you prefix it with your initials. 
+ex: **jrj**-customer-database-v3 <br>
+    Next select **Add Integration**
 
     ![](images/api-saas6a.png)
 
+1. Here you will select the **CustomerDatabaseV3Lab bar file**<br>
+Click **Add**
 
-1. Click on the **Dashboard** icon in the left navigation.
+    ![](images/api-saas6aa.png)
 
-![alt text][pic93]
+1. Now you will be back on the Create runtime screen where you will click **Create**
 
-5\. For this lab, we already have the REST service built and available as a **bar** file. You can download the **CustomerDatabaseV3Lab.bar** file for the service [<u>**here**</u>](./resources/CustomerDatabaseV3Lab.bar).
+    ![](images/api-saas6aaa.png)
 
-6\. Click on **Deploy integrations**.
+1. You will see a Create box in the upper right corner.   You can close that and click the refresh icon.
 
-![alt text][pic94]
+    ![](images/api-saas6b.png)
 
-7\. Click **Quick start integration** and click **Next**.
+1. Click refresh till you see the status **Ready** for your runtime.<br>
+    **Note:** It may take a several minutes to start up. You can refresh the page. Once it is up and running it will show the following:
 
-![alt text][pic95]
+    ![](images/api-saas6c.png)
 
-8\. Drag and drop the BAR file that you just downloaded or click to upload.  Once you have dragged and dropped or uploaded, you will see the bar file listed under **to be imported**.  Click **Next**.
+1. Click refresh till you see the status **Ready** for your runtime.
 
-![alt text][pic96]
+    ![](images/api-saas6d.png)
 
-9\. Click **Next**.
+1. Click refresh till you see the status **Ready** for your runtime.
 
-![alt text][pic97]
+    ![](images/api-saas6e.png)
 
-10\. Give the Integration Server a **Name** (e.g., username-customerdb) and click **Create**.
 
-![alt text][pic98]
+1. Click refresh till you see the status **Ready** for your runtime.
 
-11\. This will take you back to the Runtimes Dashboard where you will see your new server. It will likely be showing Pending while it is starting up the pod.
+    ![](images/api-saas6f.png)
 
-![alt text][pic99]
 
-12\. Note: It may take a several minutes to start up. You can refresh the page. Once it is up and running it will show the following:
+1. Click refresh till you see the status **Ready** for your runtime.
 
-![alt text][pic100]
+    ![](images/api-saas6g.png)
 
-13\.  Click on the newly created Runtime.
+1. Click refresh till you see the status **Ready** for your runtime.
 
-![alt text][pic101]
+    ![](images/api-saas6h.png)
 
-14\. Click on the **CustomerDatabaseV1** API.
 
-![alt text][pic102]
+1. Click refresh till you see the status **Ready** for your runtime.
 
-15\. Confirm that the **Overview** tab is selected and click **Download OpenAPI Document As JSON (or) Download OpenAPI Document As YAML**. Either format can be used to import in API Connect.<br>
+    ![](images/api-saas6i.png)
 
-![alt text][pic103]
 
-[pic0]: images/0.png
-[pic1]: images/1.png
-[pic2]: images/2.png
-[pic3]: images/3.png
-[pic4]: images/4.png
-[pic5]: images/5.png
-[pic91]: images/91.png
-[pic92]: images/92.png
-[pic93]: images/93.png
-[pic94]: images/94.png
-[pic95]: images/95.png
-[pic96]: images/96.png
-[pic97]: images/97.png
-[pic98]: images/98.png
-[pic99]: images/99.png
-[pic100]: images/100.png
-[pic101]: images/101.png
-[pic102]: images/102.png
-[pic103]: images/103.png
 
 # 3. Import an API into the Developer Workspace <a name="import_api"></a>
 
