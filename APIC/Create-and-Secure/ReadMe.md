@@ -15,9 +15,9 @@
 - [3. Import an API into the Developer Workspace](#import_api)
 
 - [4. Configure the API ](#configure_api)
-	* [3a. Configure Client Secret API Key Security](#configure_security)
-	* [3b. Review and update the Target-URL for Sandbox Environment](#target_url)
-	* [3c. Review the Proxy Call in Designer](#proxy)
+	* [4a. Configure Client Secret API Key Security](#configure_security)
+	* [4b. Review and update the Target-URL for Sandbox Environment](#target_url)
+	* [4c. Review the Proxy Call in Designer](#proxy)
 
 - [5. Test the API](#test_api)
 
@@ -114,30 +114,30 @@ Click **Add**
 
     ![](images/api-saas6c.png)
 
-1. Click refresh till you see the status **Ready** for your runtime.
+1. Once your Runtime shows **Ready** click on the tile.
 
     ![](images/api-saas6d.png)
 
-1. Click refresh till you see the status **Ready** for your runtime.
+1. You will now see the content of your Runtime.   Click on the CustomerDatabaseV3 Rest API tile.
 
     ![](images/api-saas6e.png)
 
 
-1. Click refresh till you see the status **Ready** for your runtime.
+1. Now we will do a quick test to make sure that are Rest API is working. <br> Click on the **GET /customers**
 
     ![](images/api-saas6f.png)
 
 
-1. Click refresh till you see the status **Ready** for your runtime.
+1. You will see the **getAllCustomers** operation. <br>  Click on **Try it** then <br>Click **Send**
 
     ![](images/api-saas6g.png)
 
-1. Click refresh till you see the status **Ready** for your runtime.
+1. You should see a Response of 200 and will see a list of all customers available.
 
     ![](images/api-saas6h.png)
 
 
-1. Click refresh till you see the status **Ready** for your runtime.
+1. Click on the **Overview** and then download the OpenAPI document.
 
     ![](images/api-saas6i.png)
 
@@ -145,32 +145,89 @@ Click **Add**
 
 # 3. Import an API into the Developer Workspace <a name="import_api"></a>
 
-1\. Click on **IBM Cloud Pak** in the upper left.
+1. We will now move to the API Connect developer workspace. <br>
+    Click on the Hamburger menu in the upper left corner and you will see a list of capabilities. 
+    <br> Click on **API Connect**
 
-![alt text][pic104]
+    ![](images/api-saas7a.png)
 
-2\. Navigate to the API Connect instance.
+1. You will now be on the **API Connect Home page**
+<br> Click on the **API Studio** icon
 
-![alt text][pic6]
+    ![](images/api-saas7b.png)
 
-3\. If this is your first time logging in, the login page is presented. Click **Cloud Pak User Registry**.
-![alt text][pic8]
+## 3a. Create API Project<a name="config-api-gateway-policy"></a>
 
-4\. Confirm that you are in the provider organization for your username (upper right) and then click on **Develop APIs and products**.
+1. We will first create a project and then import the 
+    ![](images/api-saas7c.png)
 
-![alt text][pic9]
+1. dd
 
-5\. We are now able to begin to create APIs and Products.  Click **Add** and select **API**
+    ![](images/api-saas7d.png)
 
-![alt text][pic10]
+1. dd
+    ![](images/api-saas7e.png)
 
-7\. Click **Existing OpenAPI** under **Import** and click **Next**.
+1. dd
+    ![](images/api-saas7f.png)
 
-![alt text][pic12]
 
-8\.  Drag and drop the yaml file that you just downloaded or click to upload.  Once you have dragged and dropped or uploaded, you will see the yaml file listed under and should see a notification that the "YAML has been successfully validated".  Click **Next**.
+1. Select "DataPower API Gateway", and name the policy as "customer-database-agw-policy", then select the API using the drop-down. <br>
+Click \<Add\>.
+![alt text](./images/image-7b.png)
 
-![alt text][pic13]
+1. Click on "Invoke" policy. <br>
+![alt text](./images/image-7c.png)
+
+	Append **$(api.operation.path)** at the end of the backend URL. <br>
+![alt text](./images/image-7d.png)
+
+
+
+## 3d. Configure CORS<a name="config-api-cors"></a>
+
+1. Click on the API Customer_Database under APIs section (left), then scroll down and click on CORS (Cross-Origin Resource Sharing). <br>
+
+1. Click <\Add\>. <br>
+![alt text](./images/image-8a.png)
+
+1. Enter name, namespace (project), then click <\Add\>. <br>
+![alt text](./images/image-8b.png)
+
+1. Edit CORS. <br>
+![alt text](./images/image-8c.png)
+
+	SCROLL down, and uncheck "Expose headers", then Save. <br>
+![alt text](./images/image-8d.png)
+
+
+## 3e. Configure Security<a name="config-api-security"></a>
+
+1. Click the Components section
+Scroll down to "Components" section, then on the right side again scroll down to "Security Schemas" section. <br>
+
+1. Click <\Add Security Schema\>. <br>
+![alt text](./images/image-9a.png)
+
+1. Add "X-IBM-Client-Id". <br>
+![alt text](./images/image-9b.png)
+
+1. Similarly, add "X-IBM-Client-Secret". <br>
+![alt text](./images/image-9c.png)
+
+1. Now, click "Security" section and then click on <\Add Security Schema\>. <br>
+![alt text](./images/image-9d.png)
+
+	First, select both apikeys, then click on <\Create AND group (2 selected)\> button. <br>
+![alt text](./images/image-9e.png)
+
+
+	Now, click <\Add\>. <br>
+	![alt text](./images/image-9f.png) <br>
+
+	![alt text](./images/image-9g.png)
+
+
 
 <!--
 9\. 
