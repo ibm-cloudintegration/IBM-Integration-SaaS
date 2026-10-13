@@ -45,35 +45,60 @@ In this tutorial, you will explore the following key capabilities:
 ![alt text](./images/apic-lab1-component-diagram.png)
 
 
-# 2. Deploying the REST Services <a name="deploy"></a>
+# 2. Deploying the REST Services to App Connect <a name="deploy"></a>
 
-First, you will deploy a Customer Database REST service and then you will download the OpenAPI file for the Customer Database REST service that you deployed.
+First, you will deploy a Customer Database REST service to App Connect and then you will download the OpenAPI file for the Customer Database REST service that you deployed.
 
-1\. In a browser, enter the URL for the Platform Navigator URL that is provided by your instructor.
+1. In a browser, enter the URL for the IBM Integration SaaS URL that is provided by your instructor.
 
-<!--
-Before beginning this lab, you will want to make sure that you have completed the [API Connect Experience Prereq instructions](../APIC-prereq/index.md).
+    **NOTE:** This is a multi tenant environment so you will see others assets from others do labs.  
+    Make sure that when you create any assets you use your initializes as part of the name.   
 
-2\. When you log in for the first time, you may see a **Welcome, let's get started** window.  Feel free to review the contents by click **Start the tour** or by click on the **X** to close the window.
+2. When you log in for the first time, you will see a **Welcome to the IBM Integration platform** window.  
 
-![alt text][pic91]
--->
- ![](images/api-saas1.png)
+    ![](images/api-saas1.png)
 
-  ![](images/api-saas2.png)
+1. Now click on the hamburger menu in the upper left corner.  You will see a menu on the left hand side.   Click on the **App Connect** 
 
- ![](images/api-saas3.png)
+    ![](images/api-saas2.png)
+    ![](images/api-saas3.png)
 
- ![](images/api-saas4.png)
+1. You will now be on the main page for App Connect.   Click on the **Manage** on the left menu.  Here you may see other Runtimes created by others using this instance.  
+    ![](images/api-saas4.png)
 
- ![](images/api-saas5.png)
+1. Now select the **BAR files** on the menu bar.  If you see **CustomerDatabaseV3Lab** you can continues to step xx since someone else has already added it. 
 
-2\. Filter instances by the student(number). You will see your instances.(br)
+    ![](images/api-saas5a.png)
 
-3\. Navigate to the **App Connect Dashboard**.
-![alt text][pic92]
+1. If you need to add the **CustomerDatabaseV3Lab** bar file you can download the **CustomerDatabaseV3Lab.bar** file for the service [<u>**here**</u>](./resources/CustomerDatabaseV3Lab.bar).
 
-4\. Click on the **Dashboard** icon in the left navigation.
+1. Now select the **BAR files** on the menu bar and select **Import BAR file** and select the **Default deplyment.  
+
+   ![](images/api-saas5.png)
+
+1. Now Drag and drop a BAR file or click to upload. 
+
+   ![](images/api-saas5b.png)
+
+1. Once you see your BAR file click **Import**
+
+   ![](images/api-saas5c.png)
+
+1. Now we will create a Runtime and deploy using the BAR file.  
+    Click on the **Runtime** on menu bar then select Create --> Default-deployment..
+
+   ![](images/api-saas6.png)
+
+1. The only thing you need to add is your Name of the runtime.<br> 
+**Note** Make sure you prefix is with your initials. 
+ex: **jrj**-customer-database-v3
+
+    Then click **Create**
+
+    ![](images/api-saas6a.png)
+
+
+1. Click on the **Dashboard** icon in the left navigation.
 
 ![alt text][pic93]
 
