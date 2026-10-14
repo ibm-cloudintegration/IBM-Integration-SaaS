@@ -189,29 +189,17 @@ Append **$(api.operation.path)** at the end of the backend URL. <br>
 
     ![](images/api-saas8c.png)
 
-1. ff
+1. Enter name using your initials **Ex:** customer-database-agw-cors <br>
+Click on **Add**
 
    ![](images/api-saas8d.png)
 
 
-
-1. Enter name, namespace (project), then click <\Add\>. <br>
-![alt text](./images/image-8b.png)
-
-1. Edit CORS. <br>
-![alt text](./images/image-8c.png)
-
-	SCROLL down, and uncheck "Expose headers", then Save. <br>
-![alt text](./images/image-8d.png)
+1. **Configure Security**  Click the **Components section** and then then on the right side scroll down to **Security Schemas** section. <br>
+Click **Add Security Schema** and select **Add a new security scheme**
+   ![](images/api-saas9a.png)
 
 
-## 3e. Configure Security<a name="config-api-security"></a>
-
-1. Click the Components section
-Scroll down to "Components" section, then on the right side again scroll down to "Security Schemas" section. <br>
-
-1. Click <\Add Security Schema\>. <br>
-![alt text](./images/image-9a.png)
 
 1. Add "X-IBM-Client-Id". <br>
 ![alt text](./images/image-9b.png)
