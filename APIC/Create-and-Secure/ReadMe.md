@@ -156,40 +156,44 @@ Click **Add**
 
     ![](images/api-saas7b.png)
 
-## 3a. Create API Project<a name="config-api-gateway-policy"></a>
+## 3a. Create API Project and add API<a name="config-api-gateway-policy"></a>
 
 1. We will first create a project and then import the 
     ![](images/api-saas7c.png)
 
-1. dd
+1. For the project name make sure to use your initials  **ex:** jrj-project <br> Click **Create**
 
     ![](images/api-saas7d.png)
 
-1. dd
+1. Next click on the new project you just created. 
     ![](images/api-saas7e.png)
 
-1. dd
+1. Now select **Add an API** and a new window will open. <br>
+**Click** on the Create Rest API.
     ![](images/api-saas7f.png)
 
+## 3b. Configure the API. <a name="config-api-cors"></a>
 
-1. Select "DataPower API Gateway", and name the policy as "customer-database-agw-policy", then select the API using the drop-down. <br>
-Click \<Add\>.
-![alt text](./images/image-7b.png)
+1. We will first create a Policy.  Click on the **+** and the Add policy sequence window opens. <br>
+Select "DataPower API Gateway", and name the policy as "customer-database-agw-policy", then select the API using the drop-down. <br>
+Click **Add**
+
+    ![](images/api-saas8a.png)
 
 1. Click on "Invoke" policy. <br>
-![alt text](./images/image-7c.png)
+Append **$(api.operation.path)** at the end of the backend URL. <br>
 
-	Append **$(api.operation.path)** at the end of the backend URL. <br>
-![alt text](./images/image-7d.png)
+    ![](images/api-saas8b.png)
+
+1. **Configure CORS** - Click on the API Customer_Database under APIs section (left), then scroll down and click on CORS (Cross-Origin Resource Sharing).
+
+    ![](images/api-saas8c.png)
+
+1. ff
+
+   ![](images/api-saas8d.png)
 
 
-
-## 3d. Configure CORS<a name="config-api-cors"></a>
-
-1. Click on the API Customer_Database under APIs section (left), then scroll down and click on CORS (Cross-Origin Resource Sharing). <br>
-
-1. Click <\Add\>. <br>
-![alt text](./images/image-8a.png)
 
 1. Enter name, namespace (project), then click <\Add\>. <br>
 ![alt text](./images/image-8b.png)
